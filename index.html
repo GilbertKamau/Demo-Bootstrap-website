@@ -2,8 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons-css">
+    <title>Document</title>
 </head>
 <body>
     <!--Navbar-->
@@ -11,6 +12,7 @@
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
                 <span class="fw-bold text-secondary">
+                    <i class="bi bi-book-half"></i>
                     Code Ninja-The book
                 </span>
             </a>
@@ -134,7 +136,7 @@ using Accordions-->
             <div class="col-6 col-lg-4">
                 <img src="assets/kindle.png" class="img-fluid" alt="kindle image">
             </div>
-
+            <div class="col-lg-6">
             <!--Accordion-->
             <div class="accordion" id="chapters">
                 <div class="accordion-items">
@@ -143,7 +145,153 @@ using Accordions-->
                         aria-controls="chapter-1"> Chapter 1 - your first web page</button>
                     </h2>
                     <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
-                        <div class="accordion-body"></div>
+                        <div class="accordion-body">
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, autem corporis, odio dicta rem quae dolore iure veritatis commodi cum ut sapiente odit saepe. Earum obcaecati necessitatibus labore. Sit, possimus?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-items">
+                    <h2 class="accordion-header" id="heading-2">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapters-2" aria-expanded="false"
+                        aria-controls="chapter-2"> Chapter 2 - Basic controls</button>
+                    </h2>
+                    <div id="chapter-2" class="accordion-collapse collapse show" aria-labelledby="heading-2" data-bs-parent="#chapters-2">
+                        <div class="accordion-body">
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, autem corporis, odio dicta rem quae dolore iure veritatis commodi cum ut sapiente odit saepe. Earum obcaecati necessitatibus labore. Sit, possimus?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-items">
+                    <h2 class="accordion-header" id="heading-3">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapters-3" aria-expanded="false"
+                        aria-controls="chapter-3"> Chapter 3 - Conditional statements</button>
+                    </h2>
+                    <div id="chapter-3" class="accordion-collapse collapse show" aria-labelledby="heading-3" data-bs-parent="#chapters-3">
+                        <div class="accordion-body">
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, autem corporis, odio dicta rem quae dolore iure veritatis commodi cum ut sapiente odit saepe. Earum obcaecati necessitatibus labore. Sit, possimus?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-items">
+                    <h2 class="accordion-header" id="heading-4">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapters" aria-expanded="false"
+                        aria-controls="chapter-4"> Chapter 4 - Functions</button>
+                    </h2>
+                    <div id="chapter-4" class="accordion-collapse collapse show" aria-labelledby="heading-4" data-bs-parent="#chapters-4">
+                        <div class="accordion-body">
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, autem corporis, odio dicta rem quae dolore iure veritatis commodi cum ut sapiente odit saepe. Earum obcaecati necessitatibus labore. Sit, possimus?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-items">
+                    <h2 class="accordion-header" id="heading-5">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapters-5" aria-expanded="false"
+                        aria-controls="chapter-5"> Data Strictures and Algorithms</button>
+                    </h2>
+                    <div id="chapter-5" class="accordion-collapse collapse show" aria-labelledby="heading-5" data-bs-parent="#chapters-5">
+                        <div class="accordion-body">
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, autem corporis, odio dicta rem quae dolore iure veritatis commodi cum ut sapiente odit saepe. Earum obcaecati necessitatibus labore. Sit, possimus?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Reviews List-->
+<section id="reviews" class="bg-light">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2> <i class="bi bi-stars"></i> Book Reviews</h2>
+            <p class="lead">What people have said about the book...</p>
+        </div>
+
+        <div class="row justift-content-center my-5">
+            <div class="col-lg-8">
+                <div class="list-group">
+                    <div class="list-group-item py-3">
+                        <h5 class="mb-1">Must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos impedit numquam dicta eius pariatur. Recusandae libero labore, ipsam omnis odit aut. Quo, minima. Similique temporibus autem architecto pariatur quaerat magni.</p>
+                        <small>Review by Moshi ya Ugali</small>
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group">
+                    <div class="list-group-item py-3">
+                        <h5 class="mb-1">Must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos impedit numquam dicta eius pariatur. Recusandae libero labore, ipsam omnis odit aut. Quo, minima. Similique temporibus autem architecto pariatur quaerat magni.</p>
+                        <small>Review by Samaki Mkunje</small>
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group">
+                    <div class="list-group-item py-3">
+                        <h5 class="mb-1">Must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos impedit numquam dicta eius pariatur. Recusandae libero labore, ipsam omnis odit aut. Quo, minima. Similique temporibus autem architecto pariatur quaerat magni.</p>
+                        <small>Review by Kichungi ya chai</small>
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group">
+                    <div class="list-group-item py-3">
+                        <h5 class="mb-1">Must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos impedit numquam dicta eius pariatur. Recusandae libero labore, ipsam omnis odit aut. Quo, minima. Similique temporibus autem architecto pariatur quaerat magni.</p>
+                        <small>Review by Remote ya Tv</small>
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group">
+                    <div class="list-group-item py-3">
+                        <h5 class="mb-1">Must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos impedit numquam dicta eius pariatur. Recusandae libero labore, ipsam omnis odit aut. Quo, minima. Similique temporibus autem architecto pariatur quaerat magni.</p>
+                        <small>Review by Kifuniko ya chupa</small>
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,6 +299,64 @@ using Accordions-->
     </div>
 </section>
 
+<!--Contact Form-->
+<section id="contact">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Get in Touch</h2>
+            <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form>
+                    <!--form input for email-->
+                    <label for="email" class="form-label">Email Address:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-envelope fill"></i>
+                        </span>
+                        <input type="email" class="form-control" id="email" placeholder="e.g moshiyaugali@gmail.com">
+                    </div>
+
+                    <!--form input for name-->
+                    <label for="name" class="form-label">Name:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person fill"></i>
+                        </span>
+                        <input type="text" class="form-control" id="name" placeholder="e.g Wuzu">
+                    </div>
+
+                    <!--Select field-->
+                    <label for="subject" class="form-label">What is your question about?</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-chat-right-dots-fill"></i>
+                        </span>
+                        <select  id="subject" class="form-select">
+                            <option value="Pricing" selected>Pricing query </option>
+                            <option value="Content">Content Query</option>
+                            <option value="Other">Other Query</option>
+                        </select>
+                    </div>
+
+                    <!--Select area-->
+                    <div class="form-floating mb-4 mt-5">
+                        <textarea name="" id="query" class="form-control" style="height: 140px;"></textarea>
+                        <label for="Query">Your Query...</label>
+                    </div>
+                    <div class="mb-4 text-center">
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--get Updates-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
