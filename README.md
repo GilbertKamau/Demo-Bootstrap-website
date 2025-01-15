@@ -1,8 +1,3 @@
-
-Here’s the refined and consolidated README.md file:
-
-markdown
-Copy code
 # Demo Bootstrap Website
 
 This repository contains a demonstration website built using **Bootstrap**. It is a hands-on project that explores and implements various Bootstrap features, including responsive design, navigation elements, and interactive components. The project also integrates Docker for containerized deployment.
