@@ -34,7 +34,7 @@ This repository contains a demonstration website built using **Bootstrap**. It i
    git clone https://github.com/GilbertKamau/Demo-Bootstrap-website
 2. Navigate to the project directory:
 
-   bash
+   
 cd Demo-Bootstrap-website
 
 3.Run the application:
@@ -42,8 +42,8 @@ cd Demo-Bootstrap-website
 Option 1: Open the index.html file in your browser to view the project locally.
 Option 2: Use Docker to create and run a container:
 
-docker build -t bootstrap-website .
-docker run -p 8080:80 bootstrap-website
+   i) docker build -t bootstrap-website .
+   ii) docker run -p 8080:80 bootstrap-website
 
 ## Purpose
 This project serves as a practical learning experience in:
