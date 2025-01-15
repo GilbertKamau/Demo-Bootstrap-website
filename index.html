@@ -59,12 +59,20 @@
     </h1>
         <p class="lead my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <a href="#pricing" class="btn btn-lg btn-danger">Buy Now</a>
+
+        <!--Open an offCanvas/sidebar-->
+        <a href="#sidebar" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar" class="d-block mt-3">
+            Explore my other books
+        </a>
     </div>
     
 
     <!--Second column-->
     <div class="col-md-5 text-center d-none d-md-block">
-    <img class="img-fluid" src="assets/ebook-cover.png" alt="ebook-cover">
+        <!--Tooltip-->
+    <span class="tt" title="Net Ninja Book" data-bs-placement="bottom">
+        <img class="img-fluid" src="assets/ebook-cover.png" alt="ebook-cover">
+    </span>
 </div>
 </div>
 </div>
@@ -286,11 +294,11 @@ using Accordions-->
                         <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos impedit numquam dicta eius pariatur. Recusandae libero labore, ipsam omnis odit aut. Quo, minima. Similique temporibus autem architecto pariatur quaerat magni.</p>
                         <small>Review by Kifuniko ya chupa</small>
                         <div class="pb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
                         </div>
                     </div>
                 </div>
@@ -356,9 +364,78 @@ using Accordions-->
 </section>
 
 
-<!--get Updates-->
+<!--get Updates using modals or popups-->
+
+<section class="bg-light">
+    <div class="container">
+        <div class="text-center">
+            <h2>Stay in the loop</h2>
+            <p class="lead">Get notified of the latest updates...</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="my-4 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia esse ullam iusto dolor! Nostrum qui animi, quos accusamus, quis beatae repellat iure expedita laudantium laboriosam ea molestias distinctio non rerum?</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for updates</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Modal It's self-->
+<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h5 class="modal-title" id="modal-title">Get the latest Updates</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio quam mollitia ducimus nesciunt molestias eveniet blanditiis officia quia quod suscipit vero aliquam repellat, labore autem placeat nostrum minima commodi?</p>
+                <label for="modal-email" class="form-label">Your Email Address:</label>
+                <input type="email" class="form-control" id="modal-email" placeholder="e.g. Enter your email...">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--offCanvas-->
+<div class="offcanvas offcanvas-start" id="sidebar" tabindex="-1" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <li>Python</li>
+        <li>Javascript</li>
+        <li>Rust</li>
+        <li>Java</li>
+
+        <!--Drop Down-->
+
+        <div class="dropdown" mt-3>
+            <button class="btn btn-primary dropdown-toggle" type="button" id="book-dropdown" data-be-toggle="dropdown">Choose a book title</button>
+            <ul class="dropdown-menu" aria-labelledby="book-dropdown"></ul>
+            <li><a href="#">React</a></li>
+            <li><a href="#">C#</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">Vue</a></li>
+        </div>
+    </div>
+</div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        const tooltips =document.querySelectorAll('.tt');
+        tooltips.forEach(t => {
+            new Bootstrap.Tooltip(t)
+        })
+    </script>
 </body>
 </html>
